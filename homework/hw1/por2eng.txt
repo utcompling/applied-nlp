@@ -1,0 +1,9 @@
+o	the
+a	the
+gato	cat
+menina	girl
+cachorro	dog
+viu	saw
+ouviu	heard
+ontem	yesterday
+hoje	today
