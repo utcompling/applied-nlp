@@ -3,7 +3,7 @@
 // Get the arguments from the command line and check there are three of
 // them and that they are of the right type. (Don't change the next block
 // of code.)
-val IntegerPattern = """\d+""".r
+val IntegerPattern = """-?\d+""".r
 val Operators = """(plus|minus|times|div)""".r
 args match {
   case Array(first, op, second) => 

@@ -1,6 +1,6 @@
 // Get the argument from the command line and check that it is an
 // integer.  (Don't change the next block of code.)
-val IntegerPattern = """\d+""".r
+val IntegerPattern = """-?\d+""".r
 if (args.length != 1 || !IntegerPattern.pattern.matcher(args(0)).matches) {
   println("Incorrect arguments to variables.scala. Please provide one integer.")
   System.exit(0)
