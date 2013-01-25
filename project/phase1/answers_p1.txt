@@ -1,0 +1,30 @@
+#### 1
+
+Your '-anlp' twitter account:
+
+The unique 'id' of your tweet: 
+
+#### 2
+
+Provide the last five lines of extracted100.txt:
+
+#### 3
+
+Provide the output for processing extracted100.txt:
+
+#### 4
+
+Provide the output for streaming from the Twitter API:
+
+
+Provide any hashtags that you found that were also trending on Twitter:
+
+
+#### Extra
+
+Discuss what you did, including any additional programs you wrote and how to run them (if that is straightforward enough), and a discussion of the output you obtained.
+
+
+
+
+
