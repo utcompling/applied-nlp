@@ -32,24 +32,6 @@ object SpellingCorrector {
 
 }
 
-
-object LanguageModel {
-
-  def apply(text: String) = {
-    val unigramCounts = collection.mutable.HashMap[String,Double]().withDefault(x=>0.0)
-    var numTokens = 1
-    text
-      .replaceAll("""[^a-zA-Z\s]""","")
-      .replaceAll("\\s+"," ")
-      .split(" ")
-      .foreach { word => { 
-	unigramCounts(word) += 1
-	numTokens += 1
-      }}
-    unigramCounts.mapValues(_/numTokens).toMap.withDefault(x=>1.0/numTokens)
-  }
-}
-
 /**
  * Candidate generators produce valid words from the vocabulary that
  * are close (by some measure) to the typo.
