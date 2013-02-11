@@ -1,0 +1,72 @@
+Name: 
+EID: 
+
+#### 1
+
+* List the last five tweets from Austin, San Francisco, and New York City.
+
+
+#### 2
+
+The address for your Github fork: 
+
+
+#### 3
+
+Show the command line calls requested.
+
+* follow @wired, @theeconomist, @nytimes, and @wsj
+
+* search for scala, java and python
+
+* search the bounding boxes around Austin, San Francisco, and New York City
+
+
+#### 4
+
+* Authorization description
+
+
+* Code description
+
+
+* Questions
+
+
+#### 5
+
+* What you did to isEnglish
+
+
+* Accuracy and description
+
+
+#### 6
+
+* Summary output
+
+
+* List ten tweets and say whether their labels are correct.
+
+
+* Remarks on anything extra you did.
+
+
+#### 7
+
+* Give each of the terms you compared and their summary output.
+
+
+#### 8
+
+* Summary output for the three cities.
+
+
+#### Extra
+
+Discuss what you did, including any additional programs you wrote and how to run them (if that is straightforward enough), and a discussion of the output you obtained.
+
+
+
+
+
