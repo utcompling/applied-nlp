@@ -1,0 +1,52 @@
+Applied-NLP, Homework 3 Answers
+
+Name: 
+EID:
+
+Link to applied-nlp fork: 
+
+--------------------------------------------------------------------------------
+
+Problem 1
+
+Part (b): Provide the requested output.
+
+
+Problem 2
+
+* Provide th command line call and the output.
+
+
+Problem 3
+
+Part (a): Provide the clusters and any comments.
+
+
+Part (b): Discuss outliers.
+
+
+Part (c): Your interpretation for output when k=4.
+
+
+Problem 4
+
+* Describe what you found.
+
+
+Problem 5
+
+* Describe result of using z-score transform on the simple features.
+
+
+
+Problem 6
+
+
+
+Problem 7
+
+
+
+
+
+

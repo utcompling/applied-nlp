@@ -1,0 +1,54 @@
+#!/bin/bash
+
+EXIT_CODE=0
+
+if [ -z $ANLP_DIR ] 
+then
+   ANLP_DIR=`dirname $0`/../
+fi
+
+if [ -z $JAVA_MEM_FLAG ] 
+then
+    JAVA_MEM_FLAG=-Xmx4g
+fi
+
+#JARS="`find $HOME/.ivy2/ -name '*.jar' -print | tr '\n' ':'`"
+MANAGED_JARS="`find $ANLP_DIR/lib_managed -name '*.jar' -print | tr '\n' ':'`"
+UNMANAGED_JARS="`find $ANLP_DIR/lib -name '*.jar' -print | tr '\n' ':'`"
+
+SCALA_LIB="$HOME/.sbt/boot/scala-2.10.0/lib/scala-library.jar"
+
+CP="$ANLP_DIR/target/classes:$SCALA_LIB:$ANLP_DIR/src/main/resources:$MANAGED_JARS:$UNMANAGED_JARS"
+
+JAVA="$JAVA_HOME/bin/java"
+JAVA_COMMAND="$JAVA -classpath $CP -Danlp.dir=$ANLP_DIR"
+
+CMD=$1
+shift
+
+help()
+{
+cat <<EOF
+anlp 0.2 commands: 
+
+  run           run the main method of a given class
+  app           run the main method of a class in appliednlp.app
+
+Include --help with any option for more information
+EOF
+}
+
+CLASS=
+
+case $CMD in
+    run) CLASS=$1; shift;;
+    app) CLASS=appliednlp.app.$1; shift;;
+    help) help; exit 1;;
+    *) echo "Unrecognized command: $CMD"; help; exit 1;;
+esac
+
+$JAVA_COMMAND $CLASS ${1+"$@"} 
+(( EXIT_CODE += $? ))
+
+exit $EXIT_CODE
+
