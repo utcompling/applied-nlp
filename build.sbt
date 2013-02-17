@@ -1,6 +1,6 @@
 name := "applied-nlp"
 
-version := "0.2-SNAPSHOT"
+version := "0.2.0"
 
 organization := "edu.utexas"
 
