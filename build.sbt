@@ -11,7 +11,8 @@ retrieveManaged := true
 crossPaths := false
 
 resolvers ++= Seq(
-   "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/releases/"
+  "opennlp sourceforge repo" at "http://opennlp.sourceforge.net/maven2",
+  "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/releases/"
 )
 
 libraryDependencies ++= Seq(
