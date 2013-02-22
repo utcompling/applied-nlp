@@ -61,7 +61,7 @@ For usage see below:
     val distanceFunctions = Set("c","cosine","e","euclidean","m","manhattan")
     val transform = opt[String]("transform", default=Some("ident"), validate = transformers, descr = "The transformation to use. Possible values: " + transformers.toSeq.sorted.mkString(",") )
     val distance = opt[String]("dist", default=Some("cosine"), validate = distanceFunctions, descr = "The distance function to use. Possible values: " + distanceFunctions.toSeq.sorted.mkString(",") )      
-    val features = opt[String]("features", default=Some("standard"), validate = featureTypes, descr = "The type of features to extract. Possible values: " + distanceFunctions.toSeq.sorted.mkString(",") )
+    val features = opt[String]("features", default=Some("standard"), validate = featureTypes, descr = "The type of features to extract. Possible values: " + featureTypes.toSeq.sorted.mkString(",") )
     val k = opt[Int]("num-clusters",short='k', required=true, validate = (0<), descr="The number of clusters to find.")
     val help = opt[Boolean]("help", noshort = true, descr = "Show this message")
     val verbose = opt[Boolean]("verbose")
