@@ -16,7 +16,7 @@ fi
 MANAGED_JARS="`find $ANLP_DIR/lib_managed -name '*.jar' -print | tr '\n' ':'`"
 UNMANAGED_JARS="`find $ANLP_DIR/lib -name '*.jar' -print | tr '\n' ':'`"
 
-SCALA_LIB="$HOME/.sbt/boot/scala-2.10.0/lib/scala-library.jar"
+SCALA_LIB="$HOME/.sbt/boot/scala-2.10.1/lib/scala-library.jar"
 
 CP="$ANLP_DIR/target/classes:$SCALA_LIB:$ANLP_DIR/src/main/resources:$MANAGED_JARS:$UNMANAGED_JARS"
 
