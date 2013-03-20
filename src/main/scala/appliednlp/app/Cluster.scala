@@ -29,6 +29,12 @@ object Cluster {
     // Your code starts here. You'll use and extend it during every problem.
 
 
+    // Display the dispersion. Uncomment the println once you have the
+    // dispersion from the computed cluster memberships.
+    if (opts.showDispersion()) {
+      //println("Dispersion: " + dispersion)
+    }
+
   }
 
 }
