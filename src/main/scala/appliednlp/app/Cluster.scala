@@ -29,6 +29,12 @@ object Cluster {
     // Your code starts here. You'll use and extend it during every problem.
 
 
+    // Display the dispersion. Uncomment the println once you have the
+    // dispersion from the computed cluster memberships.
+    if (opts.showDispersion()) {
+      //println("Dispersion: " + dispersion)
+    }
+
   }
 
 }
@@ -66,6 +72,7 @@ For usage see below:
     val help = opt[Boolean]("help", noshort = true, descr = "Show this message")
     val verbose = opt[Boolean]("verbose")
     val showCentroids = opt[Boolean]("output-centroids",short='c', descr="Show centroids.")
+    val showDispersion = opt[Boolean]("output-dispersion", short='d', descr="Show the dispersion.")
     val report = opt[Boolean]("output-report",short='r', descr="Show full cluster report.")
     val filename = trailArg[String]("filename", descr = "The input filename.")
   }
